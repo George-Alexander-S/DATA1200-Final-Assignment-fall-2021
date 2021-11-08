@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  /* applies global font styling */
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+
+  /* resets default attributes applied by browsers */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 60px; /* places everything below the navbar to not interfere */
+}
+
+/* 
+LIST OF SECTIONS:
+
+-Navigation bar
+-Welcome!  (index.html)
+-Reflection  (reflection.html)
+-Accessibility  (accessibility.html)
+-Fun!  (fun.html)
+-Media queries
+*/
+
+#skipToContent {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: black;
+  z-index: 10;
+}
+
+/* --------------------
+Start of Navigation bar
+-------------------- */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-bottom: 3px solid black;
+}
+nav ul {
+  min-width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  padding: 18px;
+  border-left: transparent solid 2px;
+  border-right: transparent solid 2px;
+  transition: 0.2s ease;
+}
+nav a:hover,
+nav a:focus {
+  background-color: rgb(219, 219, 219);
+  border-left: gray solid 2px;
+  border-right: gray solid 2px;
+}
+nav a.active {
+  background-color: rgb(219, 219, 219);
+}
+/* --------------------
+End of Navigation bar
+-------------------- */
+
+/* --------------------
+Start of Welcome! page
+-------------------- */
+.welcome {
+  outline: black dotted 1px;
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+}
+.welcome h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20vh;
+}
+/* --------------------
+End of Welcome! page
+-------------------- */
+
+/* --------------------
+Start of Reflection page
+-------------------- */
+
+/* --------------------
+End of Reflection page
+-------------------- */
+
+/* --------------------
+Start of Accessibility page
+-------------------- */
+
+/* --------------------
+End of Accessibility page
+-------------------- */
+
+/* --------------------
+Start of Fun! page
+-------------------- */
+
+/* --------------------
+End of Fun! page 
+-------------------- */
+
+/* --------------------
+Start of Media queries
+-------------------- */
+
+/* --------------------
+End of Media queries
+-------------------- */
