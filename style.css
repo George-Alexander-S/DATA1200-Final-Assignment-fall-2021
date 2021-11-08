@@ -5,17 +5,19 @@
   font-family: Montserrat, sans-serif;
   font-weight: 500;
 
-  /* resets default attributes applied by browsers */
+  /* resets default display properties applied by browsers */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin-top: 60px; /* places everything below the navbar to not interfere */
+  /* places everything below the navbar to not interfere */
+  margin-top: 60px;
 }
 
 /* 
+
 LIST OF SECTIONS:
 
 -Navigation bar
@@ -24,6 +26,7 @@ LIST OF SECTIONS:
 -Accessibility  (accessibility.html)
 -Fun!  (fun.html)
 -Media queries
+
 */
 
 #skipToContent {
@@ -43,7 +46,6 @@ nav {
   justify-content: center;
   position: fixed;
   top: 0;
-  background-color: white;
   border-bottom: 3px solid black;
 }
 nav ul {
@@ -75,20 +77,6 @@ nav a:focus {
 nav a.active {
   background-color: rgb(219, 219, 219);
 }
-/* nav button {
-  position: absolute;
-  right: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 18px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-nav button:hover {
-  background-color: rgb(219, 219, 219);
-} */
 #navbarBurgerMenu {
   display: none;
 }
