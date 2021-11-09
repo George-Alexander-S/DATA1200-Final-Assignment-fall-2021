@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  /* applies global font styling */
+  /* applies default font styling */
   font-family: Montserrat, sans-serif;
   font-weight: 500;
 
@@ -12,29 +12,50 @@
 }
 
 body {
-  /* places everything below the navbar to not interfere */
+  /* places all content below the navbar to not interfere */
   margin-top: 60px;
 }
 
 /* 
 LIST OF SECTIONS:
 
--Default section and text attributes
+-Skip to content button
 -Navigation bar
--Welcome!  (index.html)
--Reflection  (reflection.html)
+-Default section and text attributes
+-Welcome!       (index.html)
+-Reflection     (reflection.html)
 -Accessibility  (accessibility.html)
--Fun!  (fun.html)
+-Fun!           (fun.html)
 -Media queries
 */
 
+/* --------------------
+Start of Skip to content button
+-------------------- */
 #skipToContent {
-  position: absolute;
-  top: 2px;
-  left: 2px;
+  position: fixed;
+  top: 6px;
+  left: 6px;
+  padding: 3px;
   color: black;
+  background-color: white;
   z-index: 10;
+  transform: translateX(-110%);
+  transition: 0.2s ease;
 }
+#skipToContent:focus {
+  transform: translateX(0);
+}
+
+/* Stops "skip to content" button from colliding with navbar links as screen-width narrows (before entering mobile view) */
+@media only screen and (max-width: 1155px) and (min-width: 768px) {
+  #skipToContent {
+    top: 65px;
+  }
+}
+/* --------------------
+End of Skip to content button
+-------------------- */
 
 /* --------------------
 Start of Navigation bar
@@ -47,6 +68,7 @@ nav {
   top: 0;
   background: white;
   border-bottom: 2px solid rgb(255, 79, 27);
+  box-shadow: rgba(50, 50, 50, 0.8) 0 0 3px 1px;
 }
 nav ul {
   width: 95%;
@@ -86,11 +108,12 @@ section {
   width: 95%;
   max-width: 1000px;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 h1 {
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
   color: rgb(255, 79, 27);
   margin-bottom: 20px;
 }
@@ -99,11 +122,16 @@ h2 {
   margin-bottom: 30px;
 }
 p {
+  padding: 5px 0 10px 10px;
+  border-left: rgb(255, 80, 27) solid 1px;
+  border-bottom: rgb(255, 80, 27) solid 1px;
   margin-bottom: 30px;
-  padding: 2px 0 10px 10px;
-  border-left: rgba(255, 79, 27, 0.2) solid 3px;
-  border-bottom: rgba(255, 79, 27, 0.2) solid 2px;
 }
+img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 /* --------------------
 End of Default section and text attributes
 -------------------- */
@@ -144,26 +172,27 @@ End of Fun! page
 Start of Media queries
 -------------------- */
 @media only screen and (max-width: 768px) {
-  #skipToContent {
-    display: none;
-  }
   #navbarBurgerMenu {
     height: 50px;
     width: 60px;
     position: absolute;
-    top: 1px;
-    right: 1px;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
     border: none;
-    border: black solid 2px;
-    border-radius: 8px;
+    border-left: black solid 2px;
+    border-bottom: black solid 2px;
+    border-radius: 0 0 0 6px;
     background-color: white;
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: 0.1s ease-in-out;
+  }
+  #navbarBurgerMenu:hover {
+    outline: black solid 2px;
   }
   #navbarBurgerMenu div {
     height: 6px;
@@ -175,12 +204,16 @@ Start of Media queries
     width: inherit;
     right: 0;
     border: none;
+    box-shadow: inherit;
   }
   nav ul {
     display: none;
+    width: inherit;
     flex-direction: column;
-    margin-top: 55px;
-    box-shadow: black 0 0 5px 3px;
+    margin-top: 50px;
+    border: rgb(255, 80, 27) solid 2px;
+    border-right: none;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px 1px;
   }
   #navbarUl.active {
     display: flex;
