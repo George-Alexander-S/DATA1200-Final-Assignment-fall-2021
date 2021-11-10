@@ -67,7 +67,7 @@ nav {
   position: fixed;
   top: 0;
   background: white;
-  border-bottom: 2px solid rgb(255, 79, 27);
+  border-bottom: 2px solid #1c0f66;
   box-shadow: rgba(50, 50, 50, 0.8) 0 0 3px 1px;
 }
 nav ul {
@@ -84,7 +84,7 @@ nav a {
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
-  color: rgb(255, 79, 27);
+  color: #1c0f66;
   padding: 18px;
   transition: 0.2s ease;
 }
@@ -92,7 +92,7 @@ nav a:hover,
 nav a:focus,
 nav a.active {
   color: white;
-  background-color: rgb(255, 79, 27);
+  background-color: #1c0f66;
 }
 #navbarBurgerMenu {
   display: none;
@@ -114,7 +114,7 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  color: rgb(255, 79, 27);
+  color: #1c0f66;
   margin-bottom: 20px;
 }
 h2 {
@@ -123,8 +123,8 @@ h2 {
 }
 p {
   padding: 5px 0 10px 10px;
-  border-left: rgb(255, 80, 27) solid 1px;
-  border-bottom: rgb(255, 80, 27) solid 1px;
+  border-left: #1c0f66 solid 1px;
+  border-bottom: #1c0f66 solid 1px;
   margin-bottom: 30px;
 }
 img {
@@ -198,7 +198,7 @@ Start of Media queries
     height: 6px;
     width: 70%;
     border-radius: 5px;
-    background-color: rgb(255, 79, 27);
+    background-color: #1c0f66;
   }
   nav {
     width: inherit;
@@ -211,7 +211,7 @@ Start of Media queries
     width: inherit;
     flex-direction: column;
     margin-top: 50px;
-    border: rgb(255, 80, 27) solid 2px;
+    border: #1c0f66 solid 2px;
     border-right: none;
     box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px 1px;
   }
