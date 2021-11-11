@@ -126,10 +126,9 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
   color: rgb(28, 15, 102);
-  margin-bottom: 20px;
+  border-bottom: rgb(28, 15, 102) solid 3px;
+  padding-bottom: 30px;
 }
 h2 {
   font-size: 2rem;
@@ -284,7 +283,12 @@ Start of Fun! page
 .fun h1,
 .fun h2 {
   color: rgb(255, 255, 255);
-  text-decoration: none;
+  border: none;
+}
+.fun h1 span {
+  /* star symbols */
+  color: yellow;
+  text-shadow: yellow 0 0 20px;
 }
 .fun nav {
   border-bottom: 2px solid rgb(1, 129, 19);
@@ -301,27 +305,27 @@ Start of Fun! page
   background-color: rgb(1, 129, 19);
 }
 
-/* Below are picture decorations */
+/* Decoration images */
 .fun .topLights {
   background-image: url(img/topLights.png);
   position: absolute;
   height: 16px;
   width: 100%;
-  top: 62px;
-  z-index: 9;
+  top: 63px;
+  z-index: 11;
 }
 .fun .trees {
   min-width: 180px;
-  width: 20%;
+  width: 15%;
   position: absolute;
   bottom: 0;
   z-index: 8;
 }
 #tree1 {
-  left: 0;
+  left: 1%;
 }
 #tree2 {
-  right: 0;
+  right: 1%;
 }
 /* --------------------
 End of Fun! page 
@@ -416,6 +420,7 @@ Start of Media queries
 
   .fun .topLights {
     top: 0;
+    z-index: 9;
   }
   .fun #navbarBurgerMenu {
     border-left: rgb(1, 129, 19) solid 2px;
@@ -425,6 +430,9 @@ Start of Media queries
   .fun #navbarBurgerMenu:hover,
   .fun #navbarBurgerMenu:focus {
     outline: rgb(1, 129, 19) solid 2px;
+  }
+  #displayNoneOnMobile {
+    display: none;
   }
   .fun ul {
     border: rgb(1, 129, 19) solid 3px;
