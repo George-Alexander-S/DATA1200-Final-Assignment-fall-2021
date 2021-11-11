@@ -28,13 +28,12 @@
 
     <section class="accessibility" id="mainContent">
         <h1>Accessibility</h1>
-        <br>
         <h2>Screen readers and keyboard users</h2>
         <p>To make sure our website is usable to as many people as possible, we put a lot of focus on accessibility. We made some additions to our code that does not affect the average user as much, but is extremely helpful for those who might need it.</p>
         <p>At the very top left part of the navigation bar, there is a button accessible by keyboard and screen readers that will slide in from the left when in focus. The button lets keyboard users and screen readers skip each item in the navbar and go directly to the main content. To make sure users who do not need it are not distracted by this, its visibility is hidden so long as you do not use keyboard shortcuts or a screen reader.</p>
         <p>
             Here is the code used for the button: 
-            <br> 
+            <br>
             <br>
             HTML:
             <img class="smallerImages" src="img/skipToContentHTML.PNG" alt="Picture of HTML code used to make the skip to content button" title="HTML code used to make the skip to content button">
@@ -46,7 +45,7 @@
         <img class="mainImages" src="img/skipToContentGif.gif" alt="Gif showing the skip to content button." title="The skip to content button when a user navigates with a keyboard or screen reader">
         <p>We also made it so that it does not interfere with the navigation bar when the screen width is too narrow.</p>
         <img class="mainImages smallerImages" src="img/skipToContentOnSmallerScreens.png" alt="Picture showing the skip to content button placed under the navigation bar when there is too little space" title="The skip to content button is placed under the navigation bar when there is too little space">
-        <p>As with any website following the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="blank_" title="Open link in new tab:
+        <p>As with any website following the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" title="Open link in new tab:
         https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> guidelines, we made sure to add alt-descriptions and hover titles to our images and videos. We also used proper semantic code both for accessibility and to make the coder easier to maintain and understand.</p>
         <p>All interactive parts of our website (links, navigation bar, buttons, etc) are all usable through a keyboard. We made sure to structure the content in the right order so that navigation does not skip certain elements (like links).</p>
         <br>
@@ -56,15 +55,15 @@
         <br>
         <br>
         <h2>Accessibility testing</h2>
-        <p>We tested our website through accessibility checkers that would automate feedback based on our code and visual structure. The first thing we noticed was that the orange text, background color and borders needed to be changed as the contrast compared to the white background was too low and did not adhere to the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="blank_" title="Open link in new tab:
-        https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">WCAG AA Minimum Contrast</a> criteria for normal text. We used <a href="https://webaim.org/resources/contrastchecker/" target="blank_" title="Open link in new tab:
+        <p>We tested our website through accessibility checkers that would automate feedback based on our code and visual structure. The first thing we noticed was that the orange text, background color and borders needed to be changed as the contrast compared to the white background was too low and did not adhere to the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" title="Open link in new tab:
+        https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">WCAG AA Minimum Contrast</a> criteria for normal text. We used <a href="https://webaim.org/resources/contrastchecker/" target="_blank" title="Open link in new tab:
         https://webaim.org/resources/contrastchecker/">WebAim</a> to look at the contrast levels.</p>
         <div class="colorContrastImageDiv">
-            <img class="mainImages smallerImages inlineImages" src="img/colorContrastOrange.png" alt="Picture showing the color contrast on our previous orange color" title="The color contrast on our previous orange color">
-            <img class="mainImages smallerImages inlineImages" src="img/colorContrastPurple.png" alt="Picture showing the color contrast on our current purple color" title="The color contrast on our current purple color">
+            <img class="mainImages smallerImages colorContrastImages" src="img/colorContrastOrange.png" alt="Picture showing the color contrast on our previous orange color" title="The color contrast on our previous orange color">
+            <img class="mainImages smallerImages colorContrastImages" src="img/colorContrastPurple.png" alt="Picture showing the color contrast on our current purple color" title="The color contrast on our current purple color">
         </div>
         <p>We considered going with a blue color scheme instead, but we know that older people have a harder time perceiving blue colors, so we instead went with a darker purple with a contrast ratio of 16.03 : 1 instead of the orange's 3.28 : 1. We could have gone for pure black as it would give the best contrast ratio possible, but we also wanted our website to be visually appealing through added colors. Seeing as our ratio is still far above the WCAG 2.1 AAA contrast requirement of 7 : 1 for normal text, we do not see the purple colors as something that will cause problems.</p>
-        
+
     </section>
 
 </body>
