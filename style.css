@@ -45,6 +45,7 @@ Start of Skip to content button
   z-index: 10;
   transform: translateX(-110%);
   transition: 0.2s ease;
+  z-index: 12;
 }
 #skipToContent:focus {
   transform: translateX(0);
@@ -115,12 +116,12 @@ Start of Default section and text attributes
 section {
   width: 95%;
   max-width: 1000px;
+  padding: 15vh 0;
   margin: auto;
-  margin-top: 18vh;
   display: flex;
   flex-direction: column;
   gap: 35px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 h1 {
   font-size: 3rem;
@@ -135,8 +136,8 @@ h2 {
   text-align: center;
 }
 p {
-  line-height: 1.5rem;
-  padding-left: 5px;
+  line-height: 1.6rem;
+  padding-left: 8px;
   border-left: rgb(28, 15, 102) solid 1px;
 }
 img {
@@ -167,9 +168,6 @@ End of Reflection page
 /* --------------------
 Start of Accessibility page
 -------------------- */
-.accessibility {
-  margin-bottom: 30vh;
-}
 .accessibility .mainImages {
   margin: 30px 0;
 }
@@ -233,10 +231,10 @@ Start of Discussion page
   text-align: justify;
   line-height: 2rem;
 }
-p span {
+/* p span {
   display: block;
   margin-bottom: 10px;
-}
+} */
 
 .sources {
   grid-column: 1/4;
@@ -271,6 +269,7 @@ Start of Fun! page
   letter-spacing: 1px;
 }
 .fun {
+  /* This background image is purely decorative and does not need alt or title tags according to https://www.w3.org/WAI/tutorials/images/decorative/ because they would only add clutter to screen readers. */
   background-image: url(img/snowBackground.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -291,7 +290,7 @@ Start of Fun! page
   text-shadow: yellow 0 0 20px;
 }
 .fun nav {
-  border-bottom: 2px solid rgb(1, 129, 19);
+  border-bottom: rgb(1, 129, 19) solid 2px;
   box-shadow: rgba(255, 255, 0, 0.8) 0 0 5px 1px;
 }
 .fun nav a {
@@ -315,7 +314,7 @@ Start of Fun! page
   z-index: 11;
 }
 .fun .trees {
-  min-width: 180px;
+  min-width: 120px;
   width: 15%;
   position: absolute;
   bottom: 0;
@@ -323,6 +322,7 @@ Start of Fun! page
 }
 #tree1 {
   left: 1%;
+  transform: scaleX(-1);
 }
 #tree2 {
   right: 1%;
@@ -379,11 +379,12 @@ Start of Media queries
     box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px 1px;
   }
   #navbarUl.active {
+    /* activated when clicked using JavaScript in script.js file */
     display: flex;
   }
 
-  section {
-    margin-top: 10vh;
+  body {
+    margin-top: 0;
   }
   h1,
   h2 {
@@ -396,8 +397,7 @@ Start of Media queries
     font-size: 1.5rem;
   }
   p {
-    line-height: 1.3rem;
-    margin-left: -5px;
+    border: none;
   }
 
   .accessibility .colorContrastImageDiv {
