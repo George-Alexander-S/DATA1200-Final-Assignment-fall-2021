@@ -290,10 +290,11 @@ Start of Fun! page
   text-shadow: yellow 0 0 20px;
 }
 .fun nav {
-  border-bottom: rgb(1, 129, 19) solid 2px;
-  box-shadow: rgba(255, 255, 0, 0.8) 0 0 5px 1px;
+  border-bottom: rgb(1, 129, 19) solid 3px;
+  box-shadow: rgba(255, 255, 0, 0.5) 0 0 5px 1px;
 }
 .fun nav a {
+  padding: 14px;
   color: rgb(1, 129, 19);
   text-underline-offset: 5px;
 }
@@ -310,7 +311,7 @@ Start of Fun! page
   position: absolute;
   height: 16px;
   width: 100%;
-  top: 63px;
+  top: 56px;
   z-index: 11;
 }
 .fun .trees {
@@ -350,7 +351,7 @@ Start of Media queries
     box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px 1px;
     cursor: pointer;
   }
-  #navbarBurgerMenu p {
+  #navbarBurgerMenu span {
     font-size: 1.1rem;
     border: none;
     margin: auto;
