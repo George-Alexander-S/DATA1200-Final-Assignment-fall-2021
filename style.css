@@ -42,10 +42,9 @@ Start of Skip to content button
   padding: 3px;
   color: black;
   background-color: white;
-  z-index: 10;
   transform: translateX(-110%);
   transition: 0.2s ease;
-  z-index: 12;
+  z-index: 10;
 }
 #skipToContent:focus {
   transform: translateX(0);
@@ -73,7 +72,7 @@ nav {
   background: white;
   border-bottom: 2px solid rgb(28, 15, 102);
   box-shadow: rgba(50, 50, 50, 0.8) 0 0 3px 1px;
-  z-index: 10;
+  z-index: 9;
 }
 nav ul {
   width: 95%;
@@ -307,12 +306,11 @@ Start of Fun! page
 
 /* Decoration images */
 .fun .topLights {
-  background-image: url(img/topLights.png);
+  background-image: url(img/lights.svg);
   position: absolute;
-  height: 16px;
+  height: 81px;
   width: 100%;
-  top: 56px;
-  z-index: 11;
+  top: 55px;
 }
 .fun .trees {
   min-width: 120px;
@@ -421,7 +419,6 @@ Start of Media queries
 
   .fun .topLights {
     top: 0;
-    z-index: 9;
   }
   .fun #navbarBurgerMenu {
     border-left: rgb(1, 129, 19) solid 2px;
