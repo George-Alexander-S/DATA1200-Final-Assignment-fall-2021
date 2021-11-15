@@ -23,7 +23,7 @@ LIST OF SECTIONS:
 
 -Skip to content button
 -Navigation bar
--Default section and text attributes
+-Default section, text and image attributes
 -Welcome!       (index.html)
 -Reflection     (reflection.html)
 -Accessibility  (accessibility.html)
@@ -33,7 +33,7 @@ LIST OF SECTIONS:
 */
 
 /* --------------------
-Start of Skip to content button
+Skip to content button (below)
 -------------------- */
 #skipToContent {
   position: fixed;
@@ -57,11 +57,11 @@ Start of Skip to content button
   }
 }
 /* --------------------
-End of Skip to content button
+Skip to content button (above)
 -------------------- */
 
 /* --------------------
-Start of Navigation bar
+Navigation bar (below)
 -------------------- */
 nav {
   width: 100%;
@@ -106,11 +106,11 @@ nav a:focus {
   display: none;
 }
 /* --------------------
-End of Navigation bar
+Navigation bar (above)
 -------------------- */
 
 /* --------------------
-Start of Default section and text attributes
+Default section, text and image attributes (below)
 -------------------- */
 section {
   width: 95%;
@@ -143,29 +143,27 @@ img {
   width: 100%;
 }
 /* --------------------
-End of Default section and text attributes
+Default section, text and image attributes (above)
 -------------------- */
 
 /* --------------------
-Start of Welcome! page
--------------------- */
-.welcome h1 {
-  margin-bottom: 0;
-}
-/* --------------------
-End of Welcome! page
+Welcome! page (below)
 -------------------- */
 
 /* --------------------
-Start of Reflection page
+Welcome! page (above)
 -------------------- */
 
 /* --------------------
-End of Reflection page
+Reflection page (below)
 -------------------- */
 
 /* --------------------
-Start of Accessibility page
+Reflection page (above)
+-------------------- */
+
+/* --------------------
+Accessibility page (below)
 -------------------- */
 .accessibility .mainImages {
   margin: 30px 0;
@@ -186,19 +184,19 @@ Start of Accessibility page
   border: black solid 2px;
 }
 /* --------------------
-End of Accessibility page
+Accessibility page (above)
 -------------------- */
 
 /* --------------------
-Start of Discussion page
+Discussion page (below)
 -------------------- */
 
 /* --------------------
-End of Discussion page
+Discussion page (above)
 -------------------- */
 
 /* --------------------
-Start of Fun! page
+Fun! page (below)
 -------------------- */
 .fun * {
   font-family: "Mochiy Pop P One", sans-serif;
@@ -206,7 +204,7 @@ Start of Fun! page
 }
 .fun {
   /* This background image is purely decorative and does not need alt or title tags according to https://www.w3.org/WAI/tutorials/images/decorative/ because they would only add clutter to screen readers. */
-  background-image: url(img/snowBackground.png);
+  background-image: url(img/funBackground.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -219,6 +217,7 @@ Start of Fun! page
 .fun h2 {
   color: rgb(255, 255, 255);
   border: none;
+  padding: none;
 }
 .fun h1 span {
   /* star symbols */
@@ -243,7 +242,7 @@ Start of Fun! page
 
 /* Decoration images */
 .fun .topLights {
-  background-image: url(img/lights.svg);
+  background-image: url(img/decorationLights.svg);
   position: absolute;
   height: 81px;
   width: 100%;
@@ -264,13 +263,14 @@ Start of Fun! page
   right: 1%;
 }
 /* --------------------
-End of Fun! page 
+Fun! page (above)
 -------------------- */
 
 /* --------------------
-Start of Media queries
+Media queries (below)
 -------------------- */
 @media only screen and (max-width: 768px) {
+  /* Navigation bar */
   #navbarBurgerMenu {
     height: 45px;
     width: 150px;
@@ -319,6 +319,7 @@ Start of Media queries
     display: flex;
   }
 
+  /* Default section and text attributes */
   body {
     margin-top: 0;
   }
@@ -336,6 +337,7 @@ Start of Media queries
     border: none;
   }
 
+  /* Accessibility page */
   .accessibility .colorContrastImageDiv {
     flex-direction: column;
   }
@@ -345,6 +347,7 @@ Start of Media queries
     margin: 30px auto;
   }
 
+  /* Fun! page */
   .fun .topLights {
     top: 0;
   }
@@ -369,5 +372,5 @@ Start of Media queries
   }
 }
 /* --------------------
-End of Media queries
+Media queries (above)
 -------------------- */
