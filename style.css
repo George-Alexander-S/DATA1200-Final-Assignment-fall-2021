@@ -230,10 +230,10 @@ Start of Discussion page
   text-align: justify;
   line-height: 2rem;
 }
-/* p span {
+p span {
   display: block;
   margin-bottom: 10px;
-} */
+}
 
 .sources {
   grid-column: 1/4;
