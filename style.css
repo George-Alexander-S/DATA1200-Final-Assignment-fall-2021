@@ -18,19 +18,16 @@ body {
   margin-top: 60px;
 }
 
-/* 
-LIST OF SECTIONS:
-
+/*  LIST OF SECTIONS:
 -Skip to content button
 -Navigation bar
 -Default section, text and image attributes
--Welcome!       (index.html)
--Reflection     (reflection.html)
--Accessibility  (accessibility.html)
--Discussion     (discussion.html)
--Fun!           (fun.html)
--Media queries
-*/
+-Welcome!________(index.html)
+-Reflection______(reflection.html)
+-Accessibility___(accessibility.html)
+-Discussion______(discussion.html)
+-Fun!____________(fun.html)
+-Media queries  */
 
 /* --------------------
 Skip to content button (below)
@@ -115,12 +112,12 @@ Default section, text and image attributes (below)
 section {
   width: 95%;
   max-width: 1000px;
-  padding: 15vh 0;
+  padding: 15vh 0 25vh 0;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 35px;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
 }
 h1 {
   font-size: 3rem;
@@ -165,12 +162,24 @@ Reflection page (above)
 /* --------------------
 Accessibility page (below)
 -------------------- */
-.accessibility .mainImages {
-  margin: 30px 0;
+.accessibility h2 {
+  padding-top: 10vh;
+}
+#firstSubHeading {
+  padding-top: 0;
+}
+#linkExampleImage {
+  /* Added border to make it clear that this is not a real link, but an example image */
+  padding: 10px;
+  border: black solid 1px;
+}
+.accessibility img {
+  margin: 35px 0;
 }
 .accessibility .smallerImages {
   width: 100%;
   max-width: 500px;
+  margin: auto;
   display: block;
 }
 .accessibility .colorContrastImageDiv {
@@ -210,9 +219,9 @@ Fun! page (below)
   background-size: cover;
   background-position: center;
 }
-.fun section {
+/* .fun section {
   background-color: inherit;
-}
+} */
 .fun h1,
 .fun h2 {
   color: rgb(255, 255, 255);
