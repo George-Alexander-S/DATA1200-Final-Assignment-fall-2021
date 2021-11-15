@@ -192,70 +192,7 @@ End of Accessibility page
 /* --------------------
 Start of Discussion page
 -------------------- */
-.parallax {
-  display: grid;
-  grid-template-rows: 50% 50%;
-  background-image: url("/images/parallax.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 80vh;
-  width: 100%;
-}
 
-.parallax h1 {
-  grid-row: 1/2;
-  align-self: end;
-  justify-self: center;
-  font-size: 3rem;
-}
-.container {
-  display: grid;
-  grid-template-columns: 0.3fr 0.4fr 0.3fr;
-  column-gap: 10px;
-  row-gap: 15px;
-}
-.title {
-  grid-column: 1/2;
-  margin: 40px;
-}
-
-.main-content {
-  margin: 40px;
-  padding-right: 40px;
-  grid-column: 2/4;
-}
-
-.main-content p {
-  text-align: justify;
-  line-height: 2rem;
-}
-p span {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.sources {
-  grid-column: 1/4;
-  min-height: 400px;
-}
-
-.sources h2 {
-  background-color: rgb(28, 15, 102);
-  text-align: center;
-  color: #fff;
-  padding: 10px;
-  font-size: 1.2rem;
-}
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.videos > iframe {
-  margin: 10px;
-}
 /* --------------------
 End of Discussion page
 -------------------- */
@@ -406,15 +343,6 @@ Start of Media queries
     width: 100%;
     display: block;
     margin: 30px auto;
-  }
-
-  .title {
-    grid-column: 1/4;
-  }
-  .main-content {
-    grid-column: 1/4;
-    margin-top: 0;
-    padding-right: 0;
   }
 
   .fun .topLights {
