@@ -9,7 +9,13 @@ The 5th page (Fun!) will not be judged based on accessibility and therefore, we 
 
 
 Licensing: 
-All code and images used in this website is created by us.
+Unless stated otherwise, all code and images used in this website is created by us.
+
+Images:
+Photo by Nigel Tadyanehondo on Unsplash https://unsplash.com/photos/pXf4OH65OhE
+Photo by Simone Secci on Unsplash https://unsplash.com/photos/49uySSA678U
+  
+  
 
 
 Links used inside website:
@@ -21,10 +27,10 @@ https://doi.apa.org/doiLanding?doi=10.1037%2Fpspa0000098
 
 
 Group members and student numbers:
-- Ole Kristian Håseth Rudjord | s354564
-- George Alexander Saavedra | s360536
-- Paula Sielawa | s364584
-- Majda Ivic | s362095
+- Ole Kristian Håseth Rudjord
+- George Alexander Saavedra
+- Paula Sielawa
+- Majda Ivic
 
 
 Project status: IN PROGRESS

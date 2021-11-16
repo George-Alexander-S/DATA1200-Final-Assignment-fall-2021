@@ -155,7 +155,15 @@ Welcome! page (above)
 /* --------------------
 Reflection page (below)
 -------------------- */
-
+/* .reflectionimage {
+  width: 50%;
+  max-width: 400px;
+  max-height: 500px;
+  float: right;
+}
+.floatrighttext {
+  float: right;
+} */
 /* --------------------
 Reflection page (above)
 -------------------- */
