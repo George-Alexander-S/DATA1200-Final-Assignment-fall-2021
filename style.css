@@ -115,10 +115,6 @@ section {
   max-width: 1000px;
   padding: 15vh 0 25vh 0;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  /* background-color: rgb(255, 255, 255); */
 }
 h1 {
   font-size: 3rem;
@@ -140,6 +136,12 @@ p {
 img {
   width: 100%;
 }
+h1,
+h2,
+p,
+img {
+  margin-bottom: 35px;
+}
 /* --------------------
 Default section, text and image attributes (above)
 -------------------- */
@@ -155,15 +157,12 @@ Welcome! page (above)
 /* --------------------
 Reflection page (below)
 -------------------- */
-/* .reflectionimage {
-  width: 50%;
-  max-width: 400px;
-  max-height: 500px;
+.reflectionImage {
   float: right;
+  width: 40%;
+  max-width: 300px;
+  margin: 0 0 2% 2%;
 }
-.floatrighttext {
-  float: right;
-} */
 /* --------------------
 Reflection page (above)
 -------------------- */
@@ -182,13 +181,10 @@ Accessibility page (below)
   padding: 10px;
   border: black solid 1px;
 }
-.accessibility img {
-  margin: 35px 0;
-}
 .accessibility .smallerImages {
   width: 100%;
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto 35px auto;
   display: block;
 }
 .accessibility .colorContrastImageDiv {
