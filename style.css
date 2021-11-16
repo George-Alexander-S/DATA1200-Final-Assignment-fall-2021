@@ -53,6 +53,7 @@ Skip to content button (below)
     top: 65px;
   }
 }
+
 /* --------------------
 Skip to content button (above)
 -------------------- */
@@ -189,7 +190,8 @@ Accessibility page (below)
 }
 .accessibility .colorContrastImages {
   width: 49%;
-  max-width: 480px;
+  /* max-width: 480px; */
+  padding: 5px;
   border: black solid 2px;
 }
 /* --------------------
@@ -343,6 +345,7 @@ Media queries (below)
     font-size: 1.5rem;
   }
   p {
+    padding: 0;
     border: none;
   }
 
