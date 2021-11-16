@@ -9,7 +9,13 @@ The 5th page (Fun!) will not be judged based on accessibility and therefore, we 
 
 
 Licensing: 
-All code and images used in this website is created by us.
+Unless stated otherwise, all code and images used in this website is created by us.
+
+Images:
+Photo by Nigel Tadyanehondo on Unsplash https://unsplash.com/photos/pXf4OH65OhE
+Photo by Simone Secci on Unsplash https://unsplash.com/photos/49uySSA678U
+  
+  
 
 
 Links used inside website:
