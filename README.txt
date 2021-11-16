@@ -27,10 +27,10 @@ https://doi.apa.org/doiLanding?doi=10.1037%2Fpspa0000098
 
 
 Group members and student numbers:
-- Ole Kristian Håseth Rudjord | s354564
-- George Alexander Saavedra | s360536
-- Paula Sielawa | s364584
-- Majda Ivic | s362095
+- Ole Kristian Håseth Rudjord
+- George Alexander Saavedra
+- Paula Sielawa
+- Majda Ivic
 
 
 Project status: IN PROGRESS
