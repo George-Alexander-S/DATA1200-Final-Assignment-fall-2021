@@ -225,20 +225,6 @@ Fun! page (below)
   background-size: cover;
   background-position: center;
 }
-/* .fun section {
-  background-color: inherit;
-} */
-.fun h1,
-.fun h2 {
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: none;
-}
-.fun h1 span {
-  /* star symbols */
-  color: yellow;
-  text-shadow: yellow 0 0 20px;
-}
 .fun nav {
   border-bottom: rgb(1, 129, 19) solid 3px;
   box-shadow: rgba(255, 255, 0, 0.5) 0 0 5px 1px;
@@ -254,11 +240,44 @@ Fun! page (below)
   color: yellow;
   background-color: rgb(1, 129, 19);
 }
+.fun h1,
+.fun h2 {
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: none;
+}
+.fun h1 span {
+  /* star symbols */
+  color: yellow;
+  text-shadow: yellow 0 0 20px;
+}
+.fun p {
+  border: none;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 1.05rem;
+  color: white;
+}
+.fun .grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5vh;
+}
+.fun .grid img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+.fun #last-paragraph {
+  margin-top: 8vh;
+  font-size: 3rem;
+}
 
 /* Decoration images */
 .fun .top-lights {
   background-image: url(img/decorationLights.svg);
-  position: absolute;
+  position: fixed;
   height: 81px;
   width: 100%;
   top: 55px;
@@ -266,7 +285,7 @@ Fun! page (below)
 .fun .trees {
   min-width: 120px;
   width: 15%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   margin: 0;
   z-index: 8;
@@ -367,6 +386,9 @@ Media queries (below)
   /* Fun! page */
   .fun .top-lights {
     top: 0;
+  }
+  .fun section {
+    padding-bottom: 30vh;
   }
   .fun #navbar-burger-menu {
     border-left: rgb(1, 129, 19) solid 2px;
