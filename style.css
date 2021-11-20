@@ -129,7 +129,7 @@ h2 {
   text-align: center;
 }
 p {
-  line-height: 1.6rem;
+  line-height: 1.6em;
   padding-left: 8px;
   border-left: rgb(28, 15, 102) solid 1px;
 }
@@ -194,7 +194,6 @@ Accessibility page (below)
 }
 .accessibility .color-contrast-images {
   width: 49%;
-  /* max-width: 480px; */
   padding: 5px;
   border: black solid 2px;
 }
@@ -262,16 +261,12 @@ Fun! page (below)
 .fun .grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 5vh;
+  row-gap: 5vh;
 }
 .fun .grid img {
   width: 100%;
   max-width: 300px;
   margin: auto;
-}
-.fun #last-paragraph {
-  margin-top: 8vh;
-  font-size: 3rem;
 }
 
 /* Decoration images */
@@ -283,7 +278,7 @@ Fun! page (below)
   top: 55px;
 }
 .fun .trees {
-  min-width: 120px;
+  min-width: 80px;
   width: 15%;
   position: fixed;
   bottom: 0;
@@ -390,6 +385,18 @@ Media queries (below)
   .fun section {
     padding-bottom: 30vh;
   }
+  .fun p {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .fun .grid {
+    display: inherit;
+  }
+  .fun .grid img {
+    display: none;
+  }
+
+  /* navbar for Fun! page */
   .fun #navbar-burger-menu {
     border-left: rgb(1, 129, 19) solid 2px;
     border-bottom: rgb(1, 129, 19) solid 2px;
@@ -399,7 +406,7 @@ Media queries (below)
   .fun #navbar-burger-menu:focus {
     outline: rgb(1, 129, 19) solid 2px;
   }
-  #display-none-on-mobile {
+  .fun #first-star-symbol {
     display: none;
   }
   .fun ul {
