@@ -149,7 +149,20 @@ Default section, text and image attributes (above)
 /* --------------------
 Welcome! page (below)
 -------------------- */
-
+.welcome .grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 1vh;
+  row-gap: 5vh;
+}
+.welcome .grid img {
+  margin: auto;
+}
+.welcome .grid p {
+  padding: none;
+  border: none;
+  margin: auto;
+}
 /* --------------------
 Welcome! page (above)
 -------------------- */
@@ -173,7 +186,7 @@ Accessibility page (below)
 .accessibility h2 {
   padding-top: 10vh;
 }
-#first-sub-heading {
+#first-h2 {
   padding-top: 0;
 }
 #link-example-image {
@@ -204,6 +217,8 @@ Accessibility page (above)
 /* --------------------
 Discussion page (below)
 -------------------- */
+
+/* No necessary changes to Discussion page */
 
 /* --------------------
 Discussion page (above)
@@ -366,6 +381,16 @@ Media queries (below)
   p {
     padding: 0;
     border: none;
+  }
+
+  /* Welcome page */
+  .welcome .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .welcome .grid p {
+    margin: 10px 0 35px 0;
   }
 
   /* Accessibility page */
