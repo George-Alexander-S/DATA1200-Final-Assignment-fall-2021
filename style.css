@@ -156,11 +156,17 @@ Default section, text and image attributes (above)
 /* --------------------
 Welcome! page (below)
 -------------------- */
+.welcome #main-image {
+  margin-bottom: 40px;
+}
+.welcome h2 {
+  text-align: left;
+}
 .welcome .grid {
   display: grid;
   grid-template-columns: 40% 60%;
   column-gap: 20px;
-  row-gap: 60px;
+  row-gap: 80px;
 }
 .welcome .grid img {
   margin: auto;
@@ -177,6 +183,8 @@ Welcome! page (above)
 /* --------------------
 Reflection page (below)
 -------------------- */
+
+/* No necessary changes to Reflection page */
 
 /* --------------------
 Reflection page (above)
@@ -326,6 +334,7 @@ Media queries (below)
 @media only screen and (max-width: 768px) {
   /* Navigation bar */
   #navbar-burger-menu {
+    /* burger-menu button */
     height: 45px;
     width: 150px;
     position: fixed;
@@ -436,6 +445,7 @@ Media queries (below)
   /* Fun! page */
   .fun .top-lights {
     top: 0;
+    height: 50px;
   }
   .fun section {
     padding-bottom: 30vh;
