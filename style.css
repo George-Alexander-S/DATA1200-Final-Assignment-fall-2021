@@ -4,7 +4,7 @@
 
 * {
   /* applies default font styling */
-  font-family: Montserrat, sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
 
   /* resets default display properties applied by browsers */
@@ -101,6 +101,7 @@ nav a:focus {
   text-decoration: underline; /* the underline makes it easier to distinguish between the active page and the link that is being hovered or focused */
 }
 #navbar-burger-menu {
+  /* Button only displayed on smaller screen sizes */
   display: none;
 }
 /* --------------------
@@ -115,6 +116,9 @@ section {
   max-width: 1000px;
   padding: 15vh 0 25vh 0;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 h1 {
   font-size: 3rem;
@@ -136,11 +140,12 @@ p {
 img {
   width: 100%;
 }
-h1,
-h2,
-p,
-img {
-  margin-bottom: 35px;
+.image-and-text-div p {
+  padding: 0;
+  border: none;
+  color: rgb(110, 110, 110);
+  font-size: 0.8rem;
+  position: absolute; /* stops paragraph from taking up additional space and repositioning the images */
 }
 /* --------------------
 Default section, text and image attributes (above)
@@ -152,14 +157,14 @@ Welcome! page (below)
 .welcome .grid {
   display: grid;
   grid-template-columns: 40% 60%;
-  column-gap: 1vh;
-  row-gap: 5vh;
+  column-gap: 10px;
+  row-gap: 60px;
 }
 .welcome .grid img {
   margin: auto;
 }
 .welcome .grid p {
-  padding: none;
+  padding: 0;
   border: none;
   margin: auto;
 }
@@ -170,12 +175,7 @@ Welcome! page (above)
 /* --------------------
 Reflection page (below)
 -------------------- */
-.reflection-image {
-  float: right;
-  width: 40%;
-  max-width: 300px;
-  margin: 0 0 2% 2%;
-}
+
 /* --------------------
 Reflection page (above)
 -------------------- */
@@ -257,8 +257,8 @@ Fun! page (below)
 .fun h1,
 .fun h2 {
   color: rgb(255, 255, 255);
+  padding: 0;
   border: none;
-  padding: none;
 }
 .fun h1 span {
   /* star symbols */
@@ -266,11 +266,11 @@ Fun! page (below)
   text-shadow: yellow 0 0 20px;
 }
 .fun p {
-  border: none;
   padding: 0;
+  border: none;
   margin: auto;
-  text-align: center;
   font-size: 1.05rem;
+  text-align: center;
   color: white;
 }
 .fun .grid {
@@ -319,7 +319,7 @@ Media queries (below)
   #navbar-burger-menu {
     height: 45px;
     width: 150px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: flex;
@@ -340,8 +340,7 @@ Media queries (below)
     width: 35px;
     margin: auto;
   }
-  #navbar-burger-menu:hover,
-  #navbar-burger-menu:focus {
+  #navbar-burger-menu:hover {
     outline: black solid 2px;
   }
   nav {
@@ -368,10 +367,6 @@ Media queries (below)
   body {
     margin-top: 0;
   }
-  h1,
-  h2 {
-    text-align: center;
-  }
   h1 {
     font-size: 2rem;
   }
@@ -389,8 +384,11 @@ Media queries (below)
     flex-direction: column;
     gap: 0;
   }
+  .image-and-text-div {
+    margin-bottom: 25px;
+  }
   .welcome .grid p {
-    margin: 10px 0 35px 0;
+    margin-bottom: 40px;
   }
 
   /* Accessibility page */
@@ -427,8 +425,7 @@ Media queries (below)
     border-bottom: rgb(1, 129, 19) solid 2px;
     box-shadow: rgba(255, 255, 0, 0.8) 0 0 5px 1px;
   }
-  .fun #navbar-burger-menu:hover,
-  .fun #navbar-burger-menu:focus {
+  .fun #navbar-burger-menu:hover {
     outline: rgb(1, 129, 19) solid 2px;
   }
   .fun #first-star-symbol {
