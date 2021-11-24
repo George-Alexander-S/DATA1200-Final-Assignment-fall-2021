@@ -316,22 +316,6 @@ Fun! page (below)
 #tree-2 {
   right: 1%;
 }
-
-/* Scrollbar */
-.fun ::-webkit-scrollbar {
-  width: 8px;
-}
-.fun ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 20px 0 0 20px;
-}
-.fun ::-webkit-scrollbar-thumb {
-  background: rgb(1, 129, 19);
-  border-radius: 20px 0 0 20px;
-}
-.fun ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 88, 12);
-}
 /* --------------------
 Fun! page (above)
 -------------------- */
