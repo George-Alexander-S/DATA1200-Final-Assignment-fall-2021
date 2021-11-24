@@ -15,7 +15,8 @@
     <nav>
         <button id="navbar-burger-menu"> <!-- Button only displayed on smaller screen sizes -->
             <span>Menu</span>
-            <img src="img/burgerMenuIcon.svg" alt="Drop down menu button icon">
+            <img src="img/burgerMenuIcon.svg" alt="Drop-down menu icon">
+            <!-- SVG taken https://icons8.com/icons/set/burger-menu -->
         </button>
         <ul id="navbar-ul">
             <li><a href="index.html">Welcome!</a></li>
@@ -26,6 +27,7 @@
         </ul>
     </nav>
 
+    <!-- Except from the images under h2 "Accessibility testing", all other images (and one gif) are made by us and are from our own website or code.-->
     <section class="accessibility" id="main-content">
         <h1>Accessibility</h1>
         <h2 id="first-h2">Screen readers and keyboard users</h2>
@@ -46,8 +48,16 @@
         <h2>Accessibility testing</h2>
         <p>We tested our website through accessibility checkers that would automate feedback based on our code and visual structure. The first thing we noticed was that the orange text, background color and borders needed to be changed as the contrast compared to the white background was too low and did not adhere to the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" title="Open link in new tab: &#13;https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">WCAG AA Minimum Contrast</a> criteria for normal text. We used <a href="https://webaim.org/resources/contrastchecker/" target="_blank" title="Open link in new tab: &#13;https://webaim.org/resources/contrastchecker/">WebAim</a> to look at the contrast levels.</p>
         <div class="color-contrast-div">
-            <img class="small-images color-contrast-images" src="img/colorContrastOrange.png" alt="Picture showing the color contrast on our previous orange color" title="The color contrast on our previous orange color">
-            <img class="small-images color-contrast-images" src="img/colorContrastPurple.png" alt="Picture showing the color contrast on our current purple color" title="The color contrast on our current purple color">
+            <div class="image-and-text-div">
+                <img class="small-images" src="img/colorContrastOrange.png" alt="Picture showing the color contrast on our previous orange color" title="The color contrast on our previous orange color">
+                <!-- Screenshot from https://webaim.org/resources/contrastchecker/ -->
+                <p>Screenshot from WebAim Contrast Checker</p>
+            </div>
+            <div class="image-and-text-div">
+                <img class="small-images" src="img/colorContrastPurple.png" alt="Picture showing the color contrast on our previous orange color" title="The color contrast on our previous orange color">
+                <!-- Screenshot from https://webaim.org/resources/contrastchecker/ -->
+                <p>Screenshot from WebAim Contrast Checker</p>
+            </div>
         </div>
         <p>We considered going with a blue color scheme instead, but we know that older people have a harder time perceiving blue colors, thus we went with a darker purple with a contrast ratio of 16.03 : 1 instead of the orange's 3.28 : 1. We could have gone for pure black as it would give the best contrast ratio possible, but we also wanted our website to be visually appealing and colorful, while still being well above the WCAG 2.1 AAA contrast requirement of 7 : 1 for normal text.</p>
         <a href="#top">Return to the top of the page</a>

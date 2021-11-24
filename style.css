@@ -145,7 +145,11 @@ img {
   border: none;
   color: rgb(110, 110, 110);
   font-size: 0.8rem;
-  position: absolute; /* stops paragraph from taking up additional space and repositioning the images */
+  position: relative;
+}
+.grid .image-and-text-div p {
+  /* stops paragraph from taking up additional space and repositioning the images inside grids */
+  position: absolute;
 }
 /* --------------------
 Default section, text and image attributes (above)
@@ -157,7 +161,7 @@ Welcome! page (below)
 .welcome .grid {
   display: grid;
   grid-template-columns: 40% 60%;
-  column-gap: 10px;
+  column-gap: 20px;
   row-gap: 60px;
 }
 .welcome .grid img {
@@ -184,7 +188,7 @@ Reflection page (above)
 Accessibility page (below)
 -------------------- */
 .accessibility h2 {
-  padding-top: 10vh;
+  padding-top: 70px;
 }
 #first-h2 {
   padding-top: 0;
@@ -197,7 +201,7 @@ Accessibility page (below)
 .accessibility .small-images {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto;
   display: block;
 }
 .accessibility .color-contrast-div {
@@ -205,10 +209,14 @@ Accessibility page (below)
   display: flex;
   justify-content: space-between;
 }
-.accessibility .color-contrast-images {
-  width: 49%;
+.accessibility .color-contrast-div img {
   padding: 5px;
+  margin: 0 auto;
   border: black solid 2px;
+}
+.accessibility .image-and-text-div {
+  width: 49%;
+  margin: 0;
 }
 /* --------------------
 Accessibility page (above)
@@ -384,39 +392,24 @@ Media queries (below)
     flex-direction: column;
     gap: 0;
   }
-  .image-and-text-div {
-    margin-bottom: 25px;
-  }
   .welcome .grid p {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+  }
+  .welcome .grid .image-and-text-div p {
+    position: relative;
+    margin-bottom: 5px;
   }
 
   /* Accessibility page */
   .accessibility .color-contrast-div {
     flex-direction: column;
+    gap: 35px;
   }
-  .accessibility .color-contrast-images {
+  .accessibility .image-and-text-div {
     width: 100%;
-    display: block;
-    margin: 30px auto;
   }
-
-  /* Fun! page */
-  .fun .top-lights {
-    top: 0;
-  }
-  .fun section {
-    padding-bottom: 30vh;
-  }
-  .fun p {
-    text-align: left;
-    margin-bottom: 35px;
-  }
-  .fun .grid {
-    display: inherit;
-  }
-  .fun .grid img {
-    display: none;
+  .accessibility .image-and-text-div p {
+    text-align: center;
   }
 
   /* navbar for Fun! page */
@@ -437,6 +430,26 @@ Media queries (below)
   }
   .fun a {
     font-size: 0.9rem;
+  }
+
+  /* Fun! page */
+  .fun .top-lights {
+    top: 0;
+  }
+  .fun section {
+    padding-bottom: 30vh;
+  }
+  .fun p {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .fun .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .fun .remove-images-mobile {
+    display: none;
   }
 }
 /* --------------------
