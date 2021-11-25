@@ -112,7 +112,7 @@ Default section, text and image attributes (below)
 section {
   width: 95%;
   max-width: 1000px;
-  padding: 15vh 0 25vh 0;
+  padding: 15vh 0 35vh 0;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -263,6 +263,9 @@ Fun! page (below)
   color: yellow;
   background-color: rgb(1, 129, 19);
 }
+.fun section {
+  padding-bottom: 0;
+}
 .fun h1 {
   color: rgb(255, 255, 255);
   padding: 0;
@@ -324,6 +327,10 @@ Fun! page (below)
 }
 #tree-2 {
   right: 1%;
+}
+.fun .santa {
+  margin: 100px auto 0 auto;
+  width: 300px;
 }
 /* --------------------
 Fun! page (above)
@@ -441,9 +448,6 @@ Media queries (below)
   .fun .top-lights {
     top: 0;
     height: 50px;
-  }
-  .fun section {
-    padding-bottom: 30vh;
   }
   .fun p {
     font-size: 1rem;
