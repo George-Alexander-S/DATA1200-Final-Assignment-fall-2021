@@ -228,9 +228,12 @@ Accessibility page (above)
 /* --------------------
 Discussion page (below)
 -------------------- */
-
-/* No necessary changes to Discussion page */
-
+.discussion #citation {
+  padding: 0;
+  border: none;
+  color: rgb(110, 110, 110);
+  font-size: 0.8rem;
+}
 /* --------------------
 Discussion page (above)
 -------------------- */
