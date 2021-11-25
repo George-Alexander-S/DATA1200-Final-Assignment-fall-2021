@@ -407,7 +407,7 @@ Media queries (below)
   }
   .welcome .grid .image-and-text-div p {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
 
   /* Accessibility page */
