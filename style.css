@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"); /* font for Fun! page */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); /* font for Fun! page */
 
 * {
   /* applies default font styling */
@@ -159,9 +159,6 @@ Welcome! page (below)
 .welcome #main-image {
   margin-bottom: 40px;
 }
-.welcome h2 {
-  text-align: left;
-}
 .welcome .grid {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -242,8 +239,8 @@ Discussion page (above)
 Fun! page (below)
 -------------------- */
 .fun * {
-  font-family: "Mochiy Pop P One", sans-serif;
-  letter-spacing: 1px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
 }
 .fun {
   /* This background image is purely decorative and does not need alt or title tags according to https://www.w3.org/WAI/tutorials/images/decorative/ because they would only add clutter to screen readers. */
@@ -258,9 +255,7 @@ Fun! page (below)
   box-shadow: rgba(255, 255, 0, 0.5) 0 0 5px 1px;
 }
 .fun nav a {
-  padding: 14px;
   color: rgb(1, 129, 19);
-  text-underline-offset: 5px;
 }
 .fun a:hover,
 .fun a:focus,
@@ -268,11 +263,11 @@ Fun! page (below)
   color: yellow;
   background-color: rgb(1, 129, 19);
 }
-.fun h1,
-.fun h2 {
+.fun h1 {
   color: rgb(255, 255, 255);
   padding: 0;
   border: none;
+  margin: 80px 0;
 }
 .fun h1 span {
   /* star symbols */
@@ -283,31 +278,37 @@ Fun! page (below)
   padding: 0;
   border: none;
   margin: auto;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   text-align: center;
   color: white;
 }
 .fun .grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  row-gap: 5vh;
+  column-gap: 10px;
+  row-gap: 140px;
 }
-.fun .grid img {
+.fun .grid .image-and-text-div {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
+}
+.fun .grid .image-and-text-div p {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 /* Decoration images */
 .fun .top-lights {
   background-image: url(img/decorationLights.svg);
-  background-color: rgba(202, 19, 53, 0.5);
-  box-shadow: rgba(202, 19, 53, 0.5) 0 0 20px 20px;
+  background-color: rgba(202, 19, 53, 0.4);
+  box-shadow: rgba(202, 19, 53, 0.4) 0 0 20px 20px;
   /* background-color and box-shadow adds fading to text behind the top lights. */
   position: fixed;
   height: 81px;
   width: 100%;
-  top: 55px;
+  top: 58px;
+  z-index: 8;
 }
 .fun .trees {
   min-width: 80px;
@@ -403,7 +404,7 @@ Media queries (below)
     gap: 0;
   }
   .welcome .grid p {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .welcome .grid .image-and-text-div p {
     position: relative;
@@ -431,9 +432,6 @@ Media queries (below)
   .fun #navbar-burger-menu:hover {
     outline: rgb(1, 129, 19) solid 2px;
   }
-  .fun #first-star-symbol {
-    display: none;
-  }
   .fun ul {
     border: rgb(1, 129, 19) solid 3px;
     box-shadow: inherit;
@@ -451,13 +449,17 @@ Media queries (below)
     padding-bottom: 30vh;
   }
   .fun p {
+    font-size: 1rem;
+    font-weight: 600;
     text-align: left;
-    margin-bottom: 35px;
   }
   .fun .grid {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 50px;
+  }
+  .fun .grid .image-and-text-div p {
+    position: relative;
   }
   .fun .remove-images-mobile {
     display: none;
