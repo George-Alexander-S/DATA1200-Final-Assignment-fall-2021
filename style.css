@@ -436,9 +436,6 @@ Media queries (below)
     border: rgb(1, 129, 19) solid 3px;
     box-shadow: inherit;
   }
-  .fun a {
-    font-size: 0.9rem;
-  }
 
   /* Fun! page */
   .fun .top-lights {
