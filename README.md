@@ -9,19 +9,4 @@ The 5th page (Fun!) will not be judged based on accessibility and therefore, we 
 Licensing:
 Unless stated otherwise, all code and images used in this website is created by us.
 
-Images:
-
-Links used inside website:
-https://www.w3.org/WAI/standards-guidelines/wcag/
-https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
-https://webaim.org/resources/contrastchecker/
-https://en.wikipedia.org/wiki/Internet_of_things
-https://doi.apa.org/doiLanding?doi=10.1037%2Fpspa0000098
-
-Group members:
--Ole Kristian Håseth Rudjord
--George Alexander Saavedra
--Paula Sielawa
--Majda Ivic
-
-Project status: IN PROGRESS
+Project status: FINISHED

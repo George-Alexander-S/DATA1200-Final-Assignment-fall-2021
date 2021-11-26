@@ -228,7 +228,7 @@ Accessibility page (above)
 /* --------------------
 Discussion page (below)
 -------------------- */
-.discussion #citation {
+.discussion #reference {
   padding: 0;
   border: none;
   color: rgb(110, 110, 110);
