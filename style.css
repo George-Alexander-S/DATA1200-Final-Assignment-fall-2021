@@ -451,6 +451,9 @@ Media queries (below)
     top: 0;
     height: 50px;
   }
+  .fun #display-none-mobile {
+    display: none;
+  }
   .fun p {
     font-size: 1rem;
     font-weight: 600;
