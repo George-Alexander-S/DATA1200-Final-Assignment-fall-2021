@@ -248,6 +248,7 @@ Fun! page (below)
 .fun {
   /* This background image is purely decorative and does not need alt or title tags according to https://www.w3.org/WAI/tutorials/images/decorative/ because they would only add clutter to screen readers. */
   background-image: url(img/funBackground.png);
+  /* Image made by student group member */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
